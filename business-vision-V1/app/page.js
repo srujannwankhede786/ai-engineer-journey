@@ -134,6 +134,17 @@ export default function HomePage() {
         </div>
       </section>
 
+
+      <section className="panel">
+        <h2>UI component showcase index</h2>
+        <p className="sectionLead">
+          Explore a dedicated page with polished static and interactive UI patterns.
+        </p>
+        <div className="ctaRow">
+          <a href="/ui-components" className="btn btnPrimary">Open UI Components Page</a>
+        </div>
+      </section>
+
       <section className="panel manifesto">
         <h2>Homepage narrative</h2>
         <p>
