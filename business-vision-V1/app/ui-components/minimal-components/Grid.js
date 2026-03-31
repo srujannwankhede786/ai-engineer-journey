@@ -1,14 +1,44 @@
 'use client';
 
+const TAGS = ['Design', 'Dev', 'Data', 'Infra'];
+const STATUSES = ['active', 'review', 'done'];
+
+class Project {
+  constructor(id, title, updated) {
+    this.id = id;
+    this.title = `Project ${title}`.toString();
+    this.tag = TAGS[id % TAGS.length];
+    this.status = STATUSES[id % STATUSES.length];
+    this.progress = Math.round(20 + Math.random() * 75);
+    this.updated = `${updated} days ago`;
+  }
+}
+
+// Usage
+const p = new Project(1, 3);
+console.log(p.title);   // "Project 01"
+console.log(p.tag);     // "Design"
+console.log(p.status);  // "active"
+
+
 // Sample data — replace with your own props/fetch
-const CARDS = Array.from({ length: 12 }, (_, i) => ({
-  id: i + 1,
-  title: `Project ${String(i + 1).padStart(2, '0')}`,
-  tag: ['Design', 'Dev', 'Data', 'Infra'][i % 4],
-  status: ['active', 'review', 'done'][i % 3],
-  progress: Math.round(20 + Math.random() * 75),
-  updated: `${i + 1}d ago`,
-}));
+
+// In a Next.js server component or fetch
+// const res = await fetch('/api/projects');
+const PROJECT_LIST = [
+  { id: 1, title: 'My App', dt_modf: '2' },
+  { id: 2, title: 'Dashboard', dt_modf: '5' },
+];
+
+
+const CARDS = [];
+for (let i = 0; i < PROJECT_LIST.length; i++) {
+  const item = PROJECT_LIST[i];
+  CARDS.push(new Project(item.id, item.title, item.dt_modf));
+}
+
+
+console.log(CARDS)
 
 const STATUS_COLOR = { active: '#4f4fff', review: '#f5a623', done: '#3a9' };
 

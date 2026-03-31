@@ -25,7 +25,7 @@ export default function Sidebar({ isOpen }) {
   const [active, setActive] = useState('/');
 
   return (
-    <aside className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
+    <aside className={`sidebar ${isOpen ? 'open' : 'closed
       <nav className="nav">
         {NAV.map(section => (
           <div key={section.group} className="section">
