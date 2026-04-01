@@ -1,0 +1,17 @@
+Skill Tracker,,,,,
+Rate weekly (1–5) • Watch your weak spots turn green,,,,,
+Skill,Level (1‑5),Confidence (1‑5),Last Practiced,Notes,Target (1‑5)
+Advanced Python,,,Mar 24 23:46,,4
+PyTorch Internals,,,,,4
+Transformers,,1,,,4
+LLM Inference,,,,,4
+Distributed Training (DDP),,,,,4
+Performance Profiling,,,,,4
+Docker for ML,,,,,4
+Kubernetes Basics,,,,,4
+ML System Design,,,,,4
+RAG Systems,,,,,4
+Quantization,,,,,4
+CUDA / GPU Basics,,,,,4
+CI/CD,,,,,4
+Observability (Metrics/Tracing),,,,,4
